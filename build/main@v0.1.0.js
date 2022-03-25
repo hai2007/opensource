@@ -2820,7 +2820,7 @@ __etcpack__scope_bundle__.default=_class;
 window.__etcpack__bundleSrc__['19']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "\n .help{\n\ntext-align: center;\n\nmargin-top: 100px;\n\n}\n\n .help>div.logo{\n\nbackground-image: url('./logo.png');\n\nheight: 200px;\n\nbackground-repeat: no-repeat;\n\nbackground-position: center;\n\nbackground-size: auto 80%;\n\n}\n\n .help>div.links>a{\n\nfont-size: 14px;\n\nfont-weight: 800;\n\npadding:10px;\n\n}\n"
+    __etcpack__scope_bundle__.default= ""
   
     return __etcpack__scope_bundle__;
 }
@@ -2831,7 +2831,7 @@ window.__etcpack__bundleSrc__['19']=function(){
 window.__etcpack__bundleSrc__['20']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<div class=\"help\">\n    <div class=\"logo\"></div>\n    <div class=\"links\">\n        <a href=\"https://nefbl.github.io/api/\" target=\"_blank\">文档</a>\n        |\n        <a href=\"https://github.com/nefbl/nefbl\" target=\"_blank\">源码</a>\n        |\n        <a href=\"https://hai2007.gitee.io/sweethome/\" target=\"_blank\">作者</a>\n    </div>\n</div>\n"
+    __etcpack__scope_bundle__.default= ""
   
     return __etcpack__scope_bundle__;
 }
