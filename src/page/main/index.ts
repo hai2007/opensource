@@ -7,7 +7,11 @@ import style from './index.scss'
 import template from './index.html'
 
 let pages = {
-    "home": () => import('./home/index')
+    "home": () => import('./home/index'),
+    "opensource": () => import('./opensource/index'),
+    "problem": () => import('./problem/index'),
+    "example": () => import('./example/index'),
+    "about": () => import('./about/index')
 }
 
 @Component({
@@ -18,10 +22,12 @@ let pages = {
 export default class {
 
     currentPage: any
+    pageName: string
 
     $setup() {
         return {
-            currentPage: ref(null)
+            currentPage: ref(null),
+            pageName: ref("")
         }
     }
 
@@ -31,20 +37,28 @@ export default class {
         let urlObj = urlFormat(globalThis.location.href)
 
         // 获取当前页面
-        let page = pages[urlObj.router[1]]
+        this.pageName = urlObj.router[1]
 
         // 或者页面不存在
-        if (!isFunction(page)) {
+        if (!isFunction(pages[this.pageName])) {
 
             // 如果地址错误，跳转到首页
-            page = pages['home']
+            this.pageName = 'home'
         }
 
         // 打开页面
-        page().then(data => {
+        pages[this.pageName]().then(data => {
             this.currentPage = data.default
         })
 
+    }
+
+    goto(event) {
+        this.pageName = event.target.getAttribute('tag')
+        pages[this.pageName]().then(data => {
+            this.currentPage = data.default
+            window.location.href = "#/main/" + this.pageName
+        })
     }
 
 }

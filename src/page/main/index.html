@@ -1,1 +1,26 @@
+<header>
+    <h2>
+        Open Source
+        <a href="#/setting" target="_blank">
+            设置
+        </a>
+    </h2>
+    <ul>
+        <li ui-bind:active="pageName=='home'" ui-on:click="goto" tag="home">
+            首页
+        </li>
+        <li ui-bind:active="pageName=='opensource'" ui-on:click="goto" tag="opensource">
+            开源软件
+        </li>
+        <li ui-bind:active="pageName=='problem'" ui-on:click="goto" tag="problem">
+            待解决
+        </li>
+        <li ui-bind:active="pageName=='example'" ui-on:click="goto" tag="example">
+            在线演示
+        </li>
+        <li ui-bind:active="pageName=='about'" ui-on:click="goto" tag="about">
+            关于我们
+        </li>
+    </ul>
+</header>
 <div ui-lazy='currentPage'></div>

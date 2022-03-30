@@ -25,15 +25,27 @@ var isFunction=__etcpack__scope_args__.isFunction;
 __etcpack__scope_args__=window.__etcpack__getBundle('19');
 var urlFormat =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('28');
+__etcpack__scope_args__=window.__etcpack__getBundle('29');
 var style =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('29');
+__etcpack__scope_args__=window.__etcpack__getBundle('30');
 var template =__etcpack__scope_args__.default;
 
 var pages = {
   "home": function home() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle2.js','30');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle3.js','31');
+  },
+  "opensource": function opensource() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle4.js','32');
+  },
+  "problem": function problem() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle5.js','33');
+  },
+  "example": function example() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle6.js','34');
+  },
+  "about": function about() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle7.js','35');
   }
 };
 
@@ -46,13 +58,16 @@ var _class = (_dec = Component({
     _classCallCheck(this, _class2);
 
     _defineProperty(this, "currentPage", void 0);
+
+    _defineProperty(this, "pageName", void 0);
   }
 
   _createClass(_class2, [{
     key: "$setup",
     value: function $setup() {
       return {
-        currentPage: ref(null)
+        currentPage: ref(null),
+        pageName: ref("")
       };
     }
   }, {
@@ -63,16 +78,27 @@ var _class = (_dec = Component({
       // 地址栏信息
       var urlObj = urlFormat(globalThis.location.href); // 获取当前页面
 
-      var page = pages[urlObj.router[1]]; // 或者页面不存在
+      this.pageName = urlObj.router[1]; // 或者页面不存在
 
-      if (!isFunction(page)) {
+      if (!isFunction(pages[this.pageName])) {
         // 如果地址错误，跳转到首页
-        page = pages['home'];
+        this.pageName = 'home';
       } // 打开页面
 
 
-      page().then(function (data) {
+      pages[this.pageName]().then(function (data) {
         _this.currentPage = data["default"];
+      });
+    }
+  }, {
+    key: "goto",
+    value: function goto(event) {
+      var _this2 = this;
+
+      this.pageName = event.target.getAttribute('tag');
+      pages[this.pageName]().then(function (data) {
+        _this2.currentPage = data["default"];
+        window.location.href = "#/main/" + _this2.pageName;
       });
     }
   }]);
@@ -88,10 +114,10 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./src/page/main/index.scss
 /*****************************************************************/
-window.__etcpack__bundleSrc__['28']=function(){
+window.__etcpack__bundleSrc__['29']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= ""
+    __etcpack__scope_bundle__.default= "\n header{\n\ntext-align: center;\n\n}\n\n header h2{\n\nline-height: 2em;\n\nfont-family: cursive;\n\nfont-size: 40px;\n\n}\n\n header h2 a{\n\nposition: fixed;\n\nright:0;\n\ntop:0;\n\nfont-size: 14px;\n\nbackground-color: #033d47;\n\nline-height: 1em;\n\npadding: 5px;\n\ncolor: white;\n\n}\n\n header ul{\n\nbackground-color: #cfdae1;\n\npadding:10px;\n\n}\n\n header ul li{\n\ndisplay: inline-block;\n\npadding:5px 10px;\n\nfont-weight: 200;\n\nfont-size: 14px;\n\ncolor:gray;\n\ncursor: pointer;\n\nmargin: 0 10px;\n\n}\n\n header ul li[active='true']{\n\nbackground-color: #adb7be;\n\ncolor: black;\n\n}\n"
   
     return __etcpack__scope_bundle__;
 }
@@ -99,10 +125,10 @@ window.__etcpack__bundleSrc__['28']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/page/main/index.html
 /*****************************************************************/
-window.__etcpack__bundleSrc__['29']=function(){
+window.__etcpack__bundleSrc__['30']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<div ui-lazy='currentPage'></div>"
+    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        Open Source\n        <a href=\"#/setting\" target=\"_blank\">\n            设置\n        </a>\n    </h2>\n    <ul>\n        <li ui-bind:active=\"pageName=='home'\" ui-on:click=\"goto\" tag=\"home\">\n            首页\n        </li>\n        <li ui-bind:active=\"pageName=='opensource'\" ui-on:click=\"goto\" tag=\"opensource\">\n            开源软件\n        </li>\n        <li ui-bind:active=\"pageName=='problem'\" ui-on:click=\"goto\" tag=\"problem\">\n            待解决\n        </li>\n        <li ui-bind:active=\"pageName=='example'\" ui-on:click=\"goto\" tag=\"example\">\n            在线演示\n        </li>\n        <li ui-bind:active=\"pageName=='about'\" ui-on:click=\"goto\" tag=\"about\">\n            关于我们\n        </li>\n    </ul>\n</header>\n<div ui-lazy='currentPage'></div>"
   
     return __etcpack__scope_bundle__;
 }
