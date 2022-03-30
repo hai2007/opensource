@@ -1,12 +1,14 @@
 import { Component, ref } from 'nefbl'
 import { isFunction } from "@hai2007/tool/type"
 
-import urlFormat from '../tool/urlFormat'
+import urlFormat from '../../tool/urlFormat'
 
 import style from './index.scss'
 import template from './index.html'
 
-import pages from './pages/lazy-load'
+let pages = {
+    "home": () => import('./home/index')
+}
 
 @Component({
     selector: "app-root",
@@ -26,10 +28,10 @@ export default class {
     $mounted() {
 
         // 地址栏信息
-        let urlObj = urlFormat(window.location.href)
+        let urlObj = urlFormat(globalThis.location.href)
 
         // 获取当前页面
-        let page = pages[urlObj.router[0]]
+        let page = pages[urlObj.router[1]]
 
         // 或者页面不存在
         if (!isFunction(page)) {

@@ -2753,16 +2753,16 @@ __etcpack__scope_args__=window.__etcpack__getBundle('18');
 var AppComponent =__etcpack__scope_args__.default;
  // 指令
 
-__etcpack__scope_args__=window.__etcpack__getBundle('24');
+__etcpack__scope_args__=window.__etcpack__getBundle('23');
 var uiBind =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('25');
+__etcpack__scope_args__=window.__etcpack__getBundle('24');
 var uiModel =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('27');
+__etcpack__scope_args__=window.__etcpack__getBundle('26');
 var uiOn =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('28');
+__etcpack__scope_args__=window.__etcpack__getBundle('27');
 var uiLazy =__etcpack__scope_args__.default;
 
 
@@ -2781,7 +2781,7 @@ __etcpack__scope_bundle__.default=_class;
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./src/App/index.ts
+// Original file:./src/page/index.ts
 /*****************************************************************/
 window.__etcpack__bundleSrc__['18']=function(){
     var __etcpack__scope_bundle__={};
@@ -2812,9 +2812,11 @@ var style =__etcpack__scope_args__.default;
 __etcpack__scope_args__=window.__etcpack__getBundle('21');
 var template =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('22');
-var pages =__etcpack__scope_args__.default;
-
+var pages = {
+  "main": function main() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle1.js','22');
+  }
+};
 
 var _class = (_dec = Component({
   selector: "app-root",
@@ -2840,13 +2842,13 @@ var _class = (_dec = Component({
       var _this = this;
 
       // 地址栏信息
-      var urlObj = urlFormat(window.location.href); // 获取当前页面
+      var urlObj = urlFormat(globalThis.location.href); // 获取当前页面
 
       var page = pages[urlObj.router[0]]; // 或者页面不存在
 
       if (!isFunction(page)) {
         // 如果地址错误，跳转到首页
-        page = pages['home'];
+        page = pages['main'];
       } // 打开页面
 
 
@@ -2897,38 +2899,23 @@ window.__etcpack__bundleSrc__['19']=function(){
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./src/App/index.scss
+// Original file:./src/page/index.scss
 /*****************************************************************/
 window.__etcpack__bundleSrc__['20']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "\n .content{\n\nwidth: 100vw;\n\nheight: 100vh;\n\noverflow: auto;\n\n}\n"
+    __etcpack__scope_bundle__.default= ""
   
     return __etcpack__scope_bundle__;
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./src/App/index.html
+// Original file:./src/page/index.html
 /*****************************************************************/
 window.__etcpack__bundleSrc__['21']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<div class=\"content\">\n    <div ui-lazy='currentPage' id='root-view'></div>\n</div>"
-  
-    return __etcpack__scope_bundle__;
-}
-
-/*************************** [bundle] ****************************/
-// Original file:./src/App/pages/lazy-load.js
-/*****************************************************************/
-window.__etcpack__bundleSrc__['22']=function(){
-    var __etcpack__scope_bundle__={};
-    var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= {
-  "home": function home() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle1.js','23');
-  }
-};
+    __etcpack__scope_bundle__.default= "<div ui-lazy='currentPage'></div>"
   
     return __etcpack__scope_bundle__;
 }
@@ -2936,7 +2923,7 @@ window.__etcpack__bundleSrc__['22']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-bind.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['24']=function(){
+window.__etcpack__bundleSrc__['23']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -2998,7 +2985,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-model.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['25']=function(){
+window.__etcpack__bundleSrc__['24']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3013,7 +3000,7 @@ __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 var setValue=__etcpack__scope_args__.setValue;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('26');
+__etcpack__scope_args__=window.__etcpack__getBundle('25');
 var xhtml =__etcpack__scope_args__.default;
 
 
@@ -3050,7 +3037,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/@hai2007/browser/xhtml.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['26']=function(){
+window.__etcpack__bundleSrc__['25']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     /*!
@@ -3365,7 +3352,7 @@ __etcpack__scope_bundle__.default= {
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-on.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['27']=function(){
+window.__etcpack__bundleSrc__['26']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3379,7 +3366,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('26');
+__etcpack__scope_args__=window.__etcpack__getBundle('25');
 var xhtml =__etcpack__scope_args__.default;
 
 /**
@@ -3434,7 +3421,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-lazy.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['28']=function(){
+window.__etcpack__bundleSrc__['27']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;

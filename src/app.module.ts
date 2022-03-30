@@ -1,7 +1,7 @@
 import { Module } from 'nefbl'
 
 // 组件
-import AppComponent from './App/index'
+import AppComponent from './page/index'
 
 // 指令
 import uiBind from 'sprout-ui/nefbl/directive/ui-bind'
