@@ -1,6 +1,7 @@
-div{
+div {
     min-height: calc(100vh - 97px);
 }
+
 footer {
     height: 97px;
     text-align: center;
@@ -9,6 +10,7 @@ footer {
     line-height: 2em;
     padding: 20px 0;
     font-size: 14px;
+    min-width: 700px;
 
     a {
         padding: 0 5px;

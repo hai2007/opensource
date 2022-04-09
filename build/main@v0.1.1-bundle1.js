@@ -33,19 +33,19 @@ var template =__etcpack__scope_args__.default;
 
 var pages = {
   "home": function home() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle3.js','31');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle3.js','31');
   },
   "opensource": function opensource() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle4.js','32');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle4.js','32');
   },
   "problem": function problem() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle5.js','33');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle5.js','33');
   },
   "example": function example() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle6.js','34');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle6.js','34');
   },
   "about": function about() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle7.js','35');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle7.js','35');
   }
 };
 
@@ -117,7 +117,7 @@ __etcpack__scope_bundle__.default=_class;
 window.__etcpack__bundleSrc__['29']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "\n header{\n\ntext-align: center;\n\n}\n\n header h2{\n\nline-height: 2em;\n\nfont-family: cursive;\n\nfont-size: 40px;\n\n}\n\n header h2 a{\n\nposition: fixed;\n\nright:0;\n\ntop:0;\n\nfont-size: 14px;\n\nbackground-color: #033d47;\n\nline-height: 1em;\n\npadding: 5px;\n\ncolor: white;\n\n}\n\n header ul{\n\nbackground-color: #cfdae1;\n\npadding:10px;\n\n}\n\n header ul li{\n\ndisplay: inline-block;\n\npadding:5px 10px;\n\nfont-weight: 200;\n\nfont-size: 14px;\n\ncolor:gray;\n\ncursor: pointer;\n\nmargin: 0 10px;\n\n}\n\n header ul li[active='true']{\n\nbackground-color: #adb7be;\n\ncolor: black;\n\n}\n"
+    __etcpack__scope_bundle__.default= "\n header{\n\ntext-align: center;\n\nuser-select: none;\n\nmin-width: 700px;\n\n}\n\n header h2{\n\nline-height: 2em;\n\nfont-family: cursive;\n\nfont-size: 40px;\n\n}\n\n header h2 a{\n\nposition: fixed;\n\nright: 0;\n\ntop: 0;\n\nfont-size: 14px;\n\nbackground-color: #033d47;\n\nline-height: 1em;\n\npadding: 5px;\n\ncolor: white;\n\n}\n\n header ul{\n\nbackground-color: #cfdae1;\n\npadding: 10px;\n\n}\n\n header ul li{\n\ndisplay: inline-block;\n\npadding: 5px 10px;\n\nfont-weight: 200;\n\nfont-size: 14px;\n\ncolor: gray;\n\ncursor: pointer;\n\nmargin: 0 10px;\n\n}\n\n header ul li[active='true']{\n\nbackground-color: #adb7be;\n\ncolor: black;\n\n}\n\n div{\n\nwidth: 700px;\n\nmargin: 20px auto;\n\nbackground-color: #cfdae1;\n\n}\n"
   
     return __etcpack__scope_bundle__;
 }
@@ -128,7 +128,7 @@ window.__etcpack__bundleSrc__['29']=function(){
 window.__etcpack__bundleSrc__['30']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        Open Source\n        <a href=\"#/setting\" target=\"_blank\">\n            设置\n        </a>\n    </h2>\n    <ul>\n        <li ui-bind:active=\"pageName=='home'\" ui-on:click=\"goto\" tag=\"home\">\n            首页\n        </li>\n        <li ui-bind:active=\"pageName=='opensource'\" ui-on:click=\"goto\" tag=\"opensource\">\n            开源软件\n        </li>\n        <li ui-bind:active=\"pageName=='problem'\" ui-on:click=\"goto\" tag=\"problem\">\n            待解决\n        </li>\n        <li ui-bind:active=\"pageName=='example'\" ui-on:click=\"goto\" tag=\"example\">\n            在线演示\n        </li>\n        <li ui-bind:active=\"pageName=='about'\" ui-on:click=\"goto\" tag=\"about\">\n            关于我们\n        </li>\n    </ul>\n</header>\n<div ui-lazy='currentPage'></div>"
+    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        Open Source\n        <a href=\"#/setting\" target=\"_blank\">\n            设置\n        </a>\n    </h2>\n    <ul>\n        <li ui-bind:active=\"pageName=='home'\" ui-on:click=\"goto\" tag=\"home\">\n            首页\n        </li>\n        <li ui-bind:active=\"pageName=='opensource'\" ui-on:click=\"goto\" tag=\"opensource\">\n            基础建设\n        </li>\n        <li ui-bind:active=\"pageName=='problem'\" ui-on:click=\"goto\" tag=\"problem\">\n            待解决&经验\n        </li>\n        <li ui-bind:active=\"pageName=='example'\" ui-on:click=\"goto\" tag=\"example\">\n            工具&用例\n        </li>\n        <li ui-bind:active=\"pageName=='about'\" ui-on:click=\"goto\" tag=\"about\">\n            关于我们\n        </li>\n    </ul>\n</header>\n<div ui-lazy='currentPage'></div>\n"
   
     return __etcpack__scope_bundle__;
 }

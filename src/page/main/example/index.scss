@@ -1,0 +1,101 @@
+.view {
+    text-align: center;
+    padding: 10px 0;
+
+    &>h2 {
+        padding: 10px;
+        border-bottom: 1px solid white;
+        width: 400px;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    &>div {
+        margin-bottom: 20px;
+
+        &>a {
+            display: inline-block;
+            background-color: white;
+            margin: 10px;
+            vertical-align: top;
+            cursor: pointer;
+            color: rgb(80, 78, 78);
+
+            &:hover {
+                &>span {
+                    text-decoration: underline;
+                }
+
+                outline: 3px solid white;
+            }
+
+
+            &>h4 {
+                padding: 10px 0;
+            }
+
+            &>i {
+                display: block;
+                margin: auto;
+                background-position: center center;
+                background-repeat: no-repeat;
+
+            }
+
+            &>span {
+                display: block;
+                font-size: 12px;
+                padding: 20px 5px;
+            }
+        }
+
+        &.tool>a {
+            width: 140px;
+
+            border-width: 5px 0;
+            border-style: solid;
+
+            &.audio {
+                border-color: black;
+
+                &>i {
+                    background-color: #dfd2d2;
+                    background-image: url('./image/audio.png');
+                }
+            }
+
+            &>i {
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+                background-size: 70% auto;
+
+            }
+        }
+
+        &.demo>a {
+            width: 260px;
+
+            border-width: 0 5px;
+            border-style: solid;
+
+            &.robot-3d {
+                border-color: black;
+
+                &>i {
+                    background-color: #171616;
+                    background-image: url('./image/robot-3d.png');
+                }
+            }
+
+            &>i {
+
+                height: 120px;
+                width: 200px;
+                background-size: 100% auto;
+
+            }
+        }
+    }
+}
