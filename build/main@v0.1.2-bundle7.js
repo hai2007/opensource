@@ -1,8 +1,8 @@
 
 /*************************** [bundle] ****************************/
-// Original file:./src/page/main/problem/index.ts
+// Original file:./src/page/main/about/index.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['33']=function(){
+window.__etcpack__bundleSrc__['35']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -16,10 +16,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Component=__etcpack__scope_args__.Component;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('42');
+__etcpack__scope_args__=window.__etcpack__getBundle('46');
 var style =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('43');
+__etcpack__scope_args__=window.__etcpack__getBundle('47');
 var template =__etcpack__scope_args__.default;
 
 
@@ -36,9 +36,9 @@ __etcpack__scope_bundle__.default=_class;
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./src/page/main/problem/index.scss
+// Original file:./src/page/main/about/index.scss
 /*****************************************************************/
-window.__etcpack__bundleSrc__['42']=function(){
+window.__etcpack__bundleSrc__['46']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= ""
@@ -47,12 +47,12 @@ window.__etcpack__bundleSrc__['42']=function(){
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./src/page/main/problem/index.html
+// Original file:./src/page/main/about/index.html
 /*****************************************************************/
-window.__etcpack__bundleSrc__['43']=function(){
+window.__etcpack__bundleSrc__['47']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= ""
+    __etcpack__scope_bundle__.default= "<span style=\"font-family:serif;display:block;text-align:center;padding:50px;font-size: 20px;color:red;\">\n    温馨提示：本页面设计开发中~\n\n    <!-- 在本页说明我们的一些初衷等 -->\n\n</span>\n"
   
     return __etcpack__scope_bundle__;
 }

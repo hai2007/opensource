@@ -8,7 +8,7 @@ import template from './index.html'
 
 let pages = {
     "home": () => import('./home/index'),
-    "opensource": () => import('./opensource/index'),
+    "basic": () => import('./basic/index'),
     "problem": () => import('./problem/index'),
     "example": () => import('./example/index'),
     "about": () => import('./about/index')

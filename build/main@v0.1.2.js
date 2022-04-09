@@ -2814,10 +2814,10 @@ var template =__etcpack__scope_args__.default;
 
 var pages = {
   "main": function main() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle1.js','22');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle1.js','22');
   },
   "setting": function setting() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle2.js','23');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle2.js','23');
   }
 };
 
@@ -2907,7 +2907,7 @@ window.__etcpack__bundleSrc__['19']=function(){
 window.__etcpack__bundleSrc__['20']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "\n div{\n\nmin-height: calc(100vh - 97px);\n\n}\n\n footer{\n\nheight: 97px;\n\ntext-align: center;\n\nbackground-color: #fafafa;\n\nborder-top: 1px solid #d3d0d0;\n\nline-height: 2em;\n\npadding: 20px 0;\n\nfont-size: 14px;\n\nmin-width: 700px;\n\n}\n\n footer a{\n\npadding: 0 5px;\n\ncolor: rgb(5, 100, 117);\n\ntext-decoration: underline;\n\n}\n\n footer a:hover{\n\ncolor: rgb(3, 61, 71);\n\nfont-weight: 800;\n\n}\n"
+    __etcpack__scope_bundle__.default= "\n div{\n\nmin-height: calc(100vh - 97px);\n\n}\n\n footer{\n\nheight: 97px;\n\ntext-align: center;\n\nbackground-color: #fafafa;\n\nborder-top: 1px solid #d3d0d0;\n\nline-height: 2em;\n\npadding: 20px 0;\n\nfont-size: 14px;\n\nmin-width: 980px;\n\n}\n\n footer a{\n\npadding: 0 5px;\n\ncolor: rgb(5, 100, 117);\n\ntext-decoration: underline;\n\n}\n\n footer a:hover{\n\ncolor: rgb(3, 61, 71);\n\nfont-weight: 800;\n\n}\n"
   
     return __etcpack__scope_bundle__;
 }

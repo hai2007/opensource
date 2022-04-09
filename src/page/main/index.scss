@@ -1,7 +1,7 @@
 header {
     text-align: center;
     user-select: none;
-    min-width: 700px;
+    min-width: 980px;
 
     h2 {
         line-height: 2em;
@@ -21,7 +21,7 @@ header {
     }
 
     ul {
-        background-color: #cfdae1;
+        background-color: #000000;
         padding: 10px;
 
         li {
@@ -37,12 +37,17 @@ header {
                 background-color: #adb7be;
                 color: black;
             }
+
+            &[active='false'] {
+                &:hover {
+                    outline: 1px dashed white;
+                    color: white;
+                }
+            }
         }
     }
 }
 
 div {
-    width: 700px;
-    margin: 20px auto;
-    background-color: #cfdae1;
+    margin: 20px 0;
 }

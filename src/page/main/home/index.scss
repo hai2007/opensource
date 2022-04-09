@@ -1,0 +1,50 @@
+.view {
+
+    width: 980px;
+    margin: auto;
+
+    &>h2 {
+        padding-top: 179px;
+        background-image: url('./image/banner.jpg');
+        background-repeat: no-repeat;
+        background-color: #8ab891;
+        line-height: 50px;
+        position: relative;
+        padding-left: 150px;
+        font-family: cursive;
+
+        &>span {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url(./logo.png);
+            background-color: #ffffff;
+            bottom: 23px;
+            left: 25px;
+            outline: 1px solid #8ab891;
+        }
+
+        &>input {
+            height: 30px;
+            border: none;
+            outline: none;
+            padding: 0 10px;
+            padding-right: 35px;
+            background-image: url(./image/search.svg);
+            background-position: center right;
+            background-repeat: no-repeat;
+            border-radius: 3px;
+            background-color: #f3f0f0;
+            float: right;
+            margin: 10px;
+
+        }
+    }
+
+    &>div {
+        &.content {
+            border: 2px solid #8ab891;
+            border-top: none;
+        }
+    }
+}
