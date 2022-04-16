@@ -1,0 +1,57 @@
+.view {
+    text-align: center;
+
+    &>a {
+        display: inline-block;
+        width: 380px;
+        text-align: left;
+        font-size: 12px;
+        margin: 10px;
+        position: relative;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &>span {
+            position: absolute;
+            right: -20px;
+            bottom: 0;
+            transform: rotate(-45deg);
+            width: 70px;
+            font-size: 12px;
+            text-align: center;
+            color: white;
+            padding: 5px 0;
+            transform-origin: center center;
+
+            &.experience {
+                background-color: #03a9f4;
+            }
+        }
+
+        fieldset {
+            color: black;
+            padding: 10px;
+            text-indent: 2em;
+            line-height: 1.6em;
+        }
+
+        legend {
+            padding: 7px;
+            border-radius: 5px;
+            text-indent: 0;
+        }
+
+        &.Analyze-The-String {
+            fieldset {
+                border-color: rgb(183, 222, 8);
+            }
+
+            legend {
+                background-color: rgb(224, 104, 6);
+                color: white;
+            }
+        }
+    }
+}
