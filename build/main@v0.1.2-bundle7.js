@@ -52,7 +52,7 @@ window.__etcpack__bundleSrc__['46']=function(){
 window.__etcpack__bundleSrc__['47']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<span style=\"font-family:serif;display:block;text-align:center;padding:50px;font-size: 20px;color:red;\">\n    温馨提示：本页面设计开发中~\n\n    <!-- 在本页说明我们的一些初衷等 -->\n\n</span>\n"
+    __etcpack__scope_bundle__.default= "<span style=\"font-family:serif;display:block;text-align:center;padding:50px;font-size: 20px;color:red;\">\r\n    温馨提示：本页面设计开发中~\r\n\r\n    <!-- 在本页说明我们的一些初衷等 -->\r\n\r\n</span>\r\n"
   
     return __etcpack__scope_bundle__;
 }
