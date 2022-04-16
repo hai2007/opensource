@@ -8,6 +8,7 @@
         background-repeat: no-repeat;
         font-size: 14px;
         color: white;
+        margin-top: 20px;
 
         &.library {
             background-image: url('./image/title-bg-2.png');
@@ -17,6 +18,48 @@
             background-image: url('./image/title-bg-1.png');
         }
 
+    }
+
+    .library-list {
+        text-align: center;
+
+        &>a {
+            padding: 20px 0;
+            padding-left: 100px;
+            display: inline-block;
+            background-size: 100px auto;
+            background-position: left center;
+            background-repeat: no-repeat;
+            min-height: 100px;
+            text-align: left;
+            width: 400px;
+            border-width: 5px 0px;
+            border-style: solid;
+            margin: 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &>h4 {
+                color: black;
+                font-size: 15px;
+                line-height: 2em;
+            }
+
+            &>p {
+                color: gray;
+                font-size: 12px;
+                line-height: 1.6em;
+                text-indent: 2em;
+                padding-right: 10px;
+            }
+
+            &.image2d {
+                background-image: url('./image/image2d.png');
+                border-color: rgb(232, 164, 6);
+            }
+        }
     }
 
     .plug-list {
