@@ -1,0 +1,56 @@
+.view {
+    &>h2 {
+        text-align: center;
+        background-position: center center;
+        margin: 10px 0;
+        background-size: auto 100%;
+        line-height: 70px;
+        background-repeat: no-repeat;
+        font-size: 14px;
+        color: white;
+
+        &.library {
+            background-image: url('./image/title-bg-2.png');
+        }
+
+        &.plug {
+            background-image: url('./image/title-bg-1.png');
+        }
+
+    }
+
+    .plug-list {
+        text-align: center;
+
+        &>a {
+            display: inline-block;
+            width: 300px;
+            padding-top: 150px;
+            background-repeat: no-repeat;
+            background-position: center top;
+            margin: 10px;
+            line-height: 2em;
+            font-size: 12px;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            border-width: 5px 0px;
+            border-style: solid;
+
+            &.editor {
+                background-image: url('./image/editor.jpg');
+                border-color: rgb(13, 181, 52);
+            }
+
+            &.excel {
+                background-image: url('./image/excel.jpg');
+                border-color: rgb(23, 187, 228);
+            }
+
+            &:hover {
+                text-decoration: underline;
+                font-weight: 800;
+            }
+        }
+    }
+
+}
