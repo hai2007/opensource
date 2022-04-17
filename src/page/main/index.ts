@@ -10,8 +10,7 @@ let pages = {
     "home": () => import('./home/index'),
     "basic": () => import('./basic/index'),
     "problem": () => import('./problem/index'),
-    "example": () => import('./example/index'),
-    "about": () => import('./about/index')
+    "example": () => import('./example/index')
 }
 
 @Component({

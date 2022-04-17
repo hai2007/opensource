@@ -1,6 +1,6 @@
 
 /*************************** [bundle] ****************************/
-// Original file:./src/page/main/basic/index.ts
+// Original file:./src/page/main/problem/index.ts
 /*****************************************************************/
 window.__etcpack__bundleSrc__['32']=function(){
     var __etcpack__scope_bundle__={};
@@ -16,10 +16,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Component=__etcpack__scope_args__.Component;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('40');
+__etcpack__scope_args__=window.__etcpack__getBundle('38');
 var style =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('41');
+__etcpack__scope_args__=window.__etcpack__getBundle('39');
 var template =__etcpack__scope_args__.default;
 
 
@@ -36,23 +36,23 @@ __etcpack__scope_bundle__.default=_class;
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./src/page/main/basic/index.scss
+// Original file:./src/page/main/problem/index.scss
 /*****************************************************************/
-window.__etcpack__bundleSrc__['40']=function(){
+window.__etcpack__bundleSrc__['38']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "\n .view>h2{\n\ntext-align: center;\n\nbackground-position: center center;\n\nmargin: 10px 0;\n\nbackground-size: auto 100%;\n\nline-height: 70px;\n\nbackground-repeat: no-repeat;\n\nfont-size: 14px;\n\ncolor: white;\n\nmargin-top: 20px;\n\n}\n\n .view>h2.library{\n\nbackground-image: url('./image/title-bg-2.png');\n\n}\n\n .view>h2.plug{\n\nbackground-image: url('./image/title-bg-1.png');\n\n}\n\n .view .library-list{\n\ntext-align: center;\n\n}\n\n .view .library-list>a{\n\npadding: 20px 0;\n\npadding-left: 100px;\n\ndisplay: inline-block;\n\nbackground-size: 100px auto;\n\nbackground-position: left center;\n\nbackground-repeat: no-repeat;\n\nmin-height: 100px;\n\ntext-align: left;\n\nwidth: 400px;\n\nborder-width: 5px 0px;\n\nborder-style: solid;\n\nmargin: 10px;\n\n}\n\n .view .library-list>a:hover{\n\ntext-decoration: underline;\n\n}\n\n .view .library-list>a>h4{\n\ncolor: black;\n\nfont-size: 15px;\n\nline-height: 2em;\n\n}\n\n .view .library-list>a>p{\n\ncolor: gray;\n\nfont-size: 12px;\n\nline-height: 1.6em;\n\ntext-indent: 2em;\n\npadding-right: 10px;\n\n}\n\n .view .library-list>a.image2d{\n\nbackground-image: url('./image/image2d.png');\n\nborder-color: rgb(232, 164, 6);\n\n}\n\n .view .plug-list{\n\ntext-align: center;\n\n}\n\n .view .plug-list>a{\n\ndisplay: inline-block;\n\nwidth: 300px;\n\npadding-top: 150px;\n\nbackground-repeat: no-repeat;\n\nbackground-position: center top;\n\nmargin: 10px;\n\nline-height: 2em;\n\nfont-size: 12px;\n\ncursor: pointer;\n\ncolor: rgb(0, 0, 0);\n\nborder-width: 5px 0px;\n\nborder-style: solid;\n\n}\n\n .view .plug-list>a.editor{\n\nbackground-image: url('./image/editor.jpg');\n\nborder-color: rgb(13, 181, 52);\n\n}\n\n .view .plug-list>a.excel{\n\nbackground-image: url('./image/excel.jpg');\n\nborder-color: rgb(23, 187, 228);\n\n}\n\n .view .plug-list>a:hover{\n\ntext-decoration: underline;\n\nfont-weight: 800;\n\n}\n"
+    __etcpack__scope_bundle__.default= "\n .view{\n\ntext-align: center;\n\n}\n\n .view>a{\n\ndisplay: inline-block;\n\nwidth: 380px;\n\ntext-align: left;\n\nfont-size: 12px;\n\nmargin: 10px;\n\nposition: relative;\n\n}\n\n .view>a:hover{\n\ntext-decoration: underline;\n\n}\n\n .view>a>span{\n\nposition: absolute;\n\nright: -20px;\n\nbottom: 0;\n\ntransform: rotate(-45deg);\n\nwidth: 70px;\n\nfont-size: 12px;\n\ntext-align: center;\n\ncolor: white;\n\npadding: 5px 0;\n\ntransform-origin: center center;\n\n}\n\n .view>a>span.experience{\n\nbackground-color: #03a9f4;\n\n}\n\n .view>a fieldset{\n\ncolor: black;\n\npadding: 10px;\n\ntext-indent: 2em;\n\nline-height: 1.6em;\n\n}\n\n .view>a legend{\n\npadding: 7px;\n\nborder-radius: 5px;\n\ntext-indent: 0;\n\n}\n\n .view>a.Analyze-The-String fieldset{\n\nborder-color: rgb(183, 222, 8);\n\n}\n\n .view>a.Analyze-The-String legend{\n\nbackground-color: rgb(224, 104, 6);\n\ncolor: white;\n\n}\n"
   
     return __etcpack__scope_bundle__;
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./src/page/main/basic/index.html
+// Original file:./src/page/main/problem/index.html
 /*****************************************************************/
-window.__etcpack__bundleSrc__['41']=function(){
+window.__etcpack__bundleSrc__['39']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<div class=\"view\">\n    <h2 class=\"library\">开源库</h2>\n    <div class=\"library-list\">\n        <a class=\"image2d\" target=\"_blank\" href=\"https://hai2007.gitee.io/image2d/\">\n            <h4>image2D</h4>\n            <p>\n                基于canvas、svg开发的绘图库，内含绘图需要的常用算法、工具等，在保证灵活性的前提下，可以快速绘制可交互图表等。\n            </p>\n        </a>\n    </div>\n    <h2 class=\"plug\">一些插件</h2>\n    <div class=\"plug-list\">\n        <a class=\"editor\" target=\"_blank\" href=\"https://hai2007.gitee.io/open-web-editor/test/index.html\">\n            Open Web Editor\n        </a>\n        <a class=\"excel\" target=\"_blank\" href=\"https://hai2007.gitee.io/open-web-excel/test/index.html\">\n            Open Web Excel\n        </a>\n    </div>\n</div>\n"
+    __etcpack__scope_bundle__.default= "<div class=\"view\">\n\n    <a class=\"Analyze-The-String\" href=\"https://hai2007.github.io/Front-End-Laboratory/#/Analyze-The-String\"\n        target=\"_blank\">\n        <span class=\"experience\">经验</span>\n        <fieldset>\n            <legend>\n                《关于字符串解析的一点理解》\n            </legend>\n            <div>\n                在大部分情况下，我们都可以使用字符串方法或者正则表达式来简单的“理解”一段字符串。\n            </div>\n            <div>\n                而对于复杂字符串，我们通过类似“词法分析”的方法，可能是更好的选择。这里通过“解析一段HTML字符串为例”来演示具体的过程。\n            </div>\n        </fieldset>\n    </a>\n\n</div>\n"
   
     return __etcpack__scope_bundle__;
 }

@@ -7,8 +7,7 @@ import style from './index.scss'
 import template from './index.html'
 
 let pages = {
-    "main": () => import('./main/index'),
-    "setting": () => import('./setting/index')
+    "main": () => import('./main/index')
 }
 
 @Component({
