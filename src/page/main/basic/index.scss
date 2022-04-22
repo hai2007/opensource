@@ -32,10 +32,11 @@
             background-repeat: no-repeat;
             min-height: 100px;
             text-align: left;
-            width: 400px;
+            width: 350px;
             border-width: 5px 0px;
             border-style: solid;
-            margin: 10px;
+            margin: 20px;
+            vertical-align: top;
 
             &:hover {
                 text-decoration: underline;
@@ -55,9 +56,24 @@
                 padding-right: 10px;
             }
 
-            &.image2d {
-                background-image: url('./image/image2d.png');
+            &.algorithm {
+                background-image: url('./image/algorithm.png');
                 border-color: rgb(232, 164, 6);
+            }
+
+            &.tool {
+                background-image: url('./image/tool.png');
+                border-color: rgb(46, 189, 6);
+            }
+
+            &.nodejs {
+                background-image: url('./image/nodejs.png');
+                border-color: rgb(3, 196, 230);
+            }
+
+            &.painter {
+                background-image: url('./image/painter.png');
+                border-color: rgb(210, 9, 126);
             }
         }
     }
