@@ -85,6 +85,22 @@
                 }
             }
 
+            &.basic {
+                border-color: rgb(8, 205, 64);
+
+                &>legend {
+                    background-color: rgb(237, 229, 3);
+                }
+            }
+
+            &.plug {
+                border-color: rgb(41, 211, 234);
+
+                &>legend {
+                    background-color: rgb(239, 19, 107);
+                }
+            }
+
         }
 
 

@@ -125,7 +125,7 @@ window.__etcpack__bundleSrc__['29']=function(){
 window.__etcpack__bundleSrc__['30']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        Open Source\n        <a href=\"#/guide\" target=\"_blank\">\n            快速查询\n        </a>\n    </h2>\n    <ul>\n        <li ui-bind:active=\"pageName=='home'\" ui-on:click=\"goto\" tag=\"home\">\n            首页\n        </li>\n        <li ui-bind:active=\"pageName=='basic'\" ui-on:click=\"goto\" tag=\"basic\">\n            基础建设\n        </li>\n        <li ui-bind:active=\"pageName=='problem'\" ui-on:click=\"goto\" tag=\"problem\">\n            待解决&经验\n        </li>\n        <li ui-bind:active=\"pageName=='example'\" ui-on:click=\"goto\" tag=\"example\">\n            工具&用例\n        </li>\n    </ul>\n</header>\n<div ui-lazy='currentPage'></div>\n"
+    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        Open Source\n        <a href=\"#/guide\" target=\"_blank\">\n            常用链接访问\n        </a>\n    </h2>\n    <ul>\n        <li ui-bind:active=\"pageName=='home'\" ui-on:click=\"goto\" tag=\"home\">\n            首页\n        </li>\n        <li ui-bind:active=\"pageName=='basic'\" ui-on:click=\"goto\" tag=\"basic\">\n            基础建设\n        </li>\n        <li ui-bind:active=\"pageName=='problem'\" ui-on:click=\"goto\" tag=\"problem\">\n            待解决&经验\n        </li>\n        <li ui-bind:active=\"pageName=='example'\" ui-on:click=\"goto\" tag=\"example\">\n            工具&用例\n        </li>\n    </ul>\n</header>\n<div ui-lazy='currentPage'></div>\n"
   
     return __etcpack__scope_bundle__;
 }
