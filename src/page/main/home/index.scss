@@ -104,15 +104,17 @@
                                 text-align: center;
                                 font-size: 12px;
                                 display: inline-block;
-                                width: 50px;
+                                width: 80px;
                                 padding-top: 50px;
-                                margin: 10px;
+                                margin: 20px 0;
                                 line-height: 30px;
                                 height: 0;
                                 vertical-align: top;
                                 white-space: nowrap;
                                 color: black;
-                                background-size: 100% auto;
+                                background-size: 50px auto;
+                                background-repeat: no-repeat;
+                                background-position: center top;
 
                                 &:hover {
                                     text-decoration: underline;
@@ -141,8 +143,37 @@
                                 &.clunch {
                                     background-image: url('./image/clunch.png');
                                 }
+
                                 &.notepad {
                                     background-image: url('./image/notepad.png');
+                                }
+
+                                &.model-editor {
+                                    background-image: url('./image/model-editor.png');
+                                }
+
+                                &.big-screen-dataview {
+                                    background-image: url('./image/big-screen-dataview.png');
+                                }
+
+                                &.open-code-editor {
+                                    background-image: url('./image/open-code-editor.png');
+                                }
+
+                                &.type-practice {
+                                    background-image: url('./image/type-practice.png');
+                                }
+
+                                &.xhtml-engine {
+                                    background-image: url('./image/xhtml-engine.png');
+                                }
+
+                                &.react-lazily-component {
+                                    background-image: url('./image/react-lazily-component.png');
+                                }
+
+                                &.vue-input-check {
+                                    background-image: url('./image/vue-input-check.png');
                                 }
                             }
                         }

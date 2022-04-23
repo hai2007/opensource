@@ -33,16 +33,16 @@ var template =__etcpack__scope_args__.default;
 
 var pages = {
   "home": function home() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle3.js','31');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.4-bundle3.js','31');
   },
   "basic": function basic() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle4.js','32');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.4-bundle4.js','32');
   },
   "problem": function problem() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle5.js','33');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.4-bundle5.js','33');
   },
   "example": function example() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle6.js','34');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.4-bundle6.js','34');
   }
 };
 
