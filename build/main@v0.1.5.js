@@ -2814,10 +2814,10 @@ var template =__etcpack__scope_args__.default;
 
 var pages = {
   "main": function main() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.4-bundle1.js','22');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.5-bundle1.js','22');
   },
   "guide": function guide() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.4-bundle2.js','23');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.5-bundle2.js','23');
   }
 };
 
