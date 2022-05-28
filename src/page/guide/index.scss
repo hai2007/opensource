@@ -101,6 +101,15 @@
                 }
             }
 
+
+            &.tool {
+                border-color: rgb(203, 241, 32);
+
+                &>legend {
+                    background-color: rgb(189, 152, 5);
+                }
+            }
+
         }
 
 

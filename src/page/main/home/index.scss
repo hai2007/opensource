@@ -46,8 +46,29 @@
         &.containter {
             background-color: #dceffe;
             min-height: calc(100vh - 490px);
+            position: relative;
 
             &>div {
+                &.girl {
+                    width: 300px;
+                    height: 300px;
+                    position: absolute;
+                    bottom: 0;
+                    background-size: auto 100%;
+                    background-repeat: no-repeat;
+                    pointer-events: none;
+
+                    &.left {
+                        background-image: url('./image/girl1.png');
+                        left: 0;
+                    }
+
+                    &.right {
+                        background-image: url('./image/girl2.png');
+                        right: 0;
+                    }
+                }
+
                 &.focus {
                     padding: 20px 0;
                     text-align: center;
@@ -110,6 +131,15 @@
                                     font-weight: 400;
                                     padding-left: 5px;
                                     display: inline-block;
+
+                                    &>a {
+                                        padding: 0 5px;
+                                        text-decoration: underline;
+
+                                        &:hover {
+                                            font-weight: 800;
+                                        }
+                                    }
                                 }
                             }
 
