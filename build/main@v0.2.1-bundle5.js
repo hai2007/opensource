@@ -52,7 +52,7 @@ window.__etcpack__bundleSrc__['41']=function(){
 window.__etcpack__bundleSrc__['42']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<div class=\"view\">\n\n    <a class=\"Analyze-The-String\" href=\"https://hai2007.github.io/Front-End-Laboratory/#/Analyze-The-String\"\n        target=\"_blank\">\n        <span class=\"experience\">经验</span>\n        <fieldset>\n            <legend>\n                《关于字符串解析的一点理解》\n            </legend>\n            <div>\n                在大部分情况下，我们都可以使用字符串方法或者正则表达式来简单的“理解”一段字符串。\n            </div>\n            <div>\n                而对于复杂字符串，我们通过类似“词法分析”的方法，可能是更好的选择。这里通过“解析一段HTML字符串为例”来演示具体的过程。\n            </div>\n        </fieldset>\n    </a>\n\n</div>\n"
+    __etcpack__scope_bundle__.default= "<div class=\"view\">\r\n\r\n    <a class=\"Analyze-The-String\" href=\"https://hai2007.github.io/Front-End-Laboratory/#/Analyze-The-String\"\r\n        target=\"_blank\">\r\n        <span class=\"experience\">经验</span>\r\n        <fieldset>\r\n            <legend>\r\n                《关于字符串解析的一点理解》\r\n            </legend>\r\n            <div>\r\n                在大部分情况下，我们都可以使用字符串方法或者正则表达式来简单的“理解”一段字符串。\r\n            </div>\r\n            <div>\r\n                而对于复杂字符串，我们通过类似“词法分析”的方法，可能是更好的选择。这里通过“解析一段HTML字符串为例”来演示具体的过程。\r\n            </div>\r\n        </fieldset>\r\n    </a>\r\n\r\n</div>\r\n"
   
     return __etcpack__scope_bundle__;
 }

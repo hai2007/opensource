@@ -33,16 +33,16 @@ var template =__etcpack__scope_args__.default;
 
 var pages = {
   "home": function home() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle3.js','31');
+    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle3.js','31');
   },
   "basic": function basic() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle4.js','32');
+    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle4.js','32');
   },
   "problem": function problem() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle5.js','33');
+    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle5.js','33');
   },
   "example": function example() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle6.js','34');
+    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle6.js','34');
   }
 };
 
@@ -125,7 +125,7 @@ window.__etcpack__bundleSrc__['29']=function(){
 window.__etcpack__bundleSrc__['30']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        Open Source\n        <a href=\"#/guide\" target=\"_blank\">\n            常用链接访问\n        </a>\n    </h2>\n    <ul>\n        <li ui-bind:active=\"pageName=='home'\" ui-on:click=\"goto\" tag=\"home\">\n            首页\n        </li>\n        <li ui-bind:active=\"pageName=='basic'\" ui-on:click=\"goto\" tag=\"basic\">\n            基础建设\n        </li>\n        <li ui-bind:active=\"pageName=='problem'\" ui-on:click=\"goto\" tag=\"problem\">\n            待解决&经验\n        </li>\n        <li ui-bind:active=\"pageName=='example'\" ui-on:click=\"goto\" tag=\"example\">\n            工具&用例\n        </li>\n    </ul>\n</header>\n<div ui-lazy='currentPage'></div>\n"
+    __etcpack__scope_bundle__.default= "<header>\r\n    <h2>\r\n        Open Source\r\n        <a href=\"#/guide\" target=\"_blank\">\r\n            常用链接访问\r\n        </a>\r\n    </h2>\r\n    <ul>\r\n        <li ui-bind:active=\"pageName=='home'\" ui-on:click=\"goto\" tag=\"home\">\r\n            首页\r\n        </li>\r\n        <li ui-bind:active=\"pageName=='basic'\" ui-on:click=\"goto\" tag=\"basic\">\r\n            基础建设\r\n        </li>\r\n        <li ui-bind:active=\"pageName=='problem'\" ui-on:click=\"goto\" tag=\"problem\">\r\n            待解决&经验\r\n        </li>\r\n        <li ui-bind:active=\"pageName=='example'\" ui-on:click=\"goto\" tag=\"example\">\r\n            工具&用例\r\n        </li>\r\n    </ul>\r\n</header>\r\n<div ui-lazy='currentPage'></div>\r\n"
   
     return __etcpack__scope_bundle__;
 }

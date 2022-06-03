@@ -74,6 +74,15 @@
                 }
             }
 
+            &.image{
+                border-color: #e87603;
+
+                &>i {
+                    background-color: #efc8e8;
+                    background-image: url('./image/image.png');
+                }
+            }
+
             &>i {
                 height: 70px;
                 width: 70px;

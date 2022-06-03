@@ -1,58 +1,58 @@
 /******/
-/******/  // EtcPack Bootstrap
-/******/  // （ https://etcpack.github.io/api/ ）
-/******/  
-/******/  // 记录bundle的函数源码
-/******/  window.__etcpack__bundleSrc__ = {};
-/******/  
-/******/  // 记录bundle的运行结果
-/******/  window.__etcpack__bundleObj__ = {};
-/******/  
-/******/  // 获取bundle结果
-/******/  window.__etcpack__getBundle = function (bundleName) {
-/******/  
-/******/      // 一个bundle只有第一次导入的时候需要执行
-/******/      if (!(bundleName in window.__etcpack__bundleObj__)) {
-/******/          window.__etcpack__bundleObj__[bundleName] = window.__etcpack__bundleSrc__[bundleName]();
-/******/      }
-/******/  
-/******/      // 返回需要的bundle的结果
-/******/      return window.__etcpack__bundleObj__[bundleName];
-/******/  }
-/******/  
-/******/  window.__etcpack__bundleFile__ = {};
-/******/  
-/******/  // 获取懒加载bundle结果
-/******/  window.__etcpack__getLazyBundle = function (fileName, bundleName) {
-/******/      return new Promise(function (resolve) {
-/******/  
-/******/          // 如果加载过了
-/******/          if (window.__etcpack__bundleFile__[fileName]) {
-/******/              resolve(window.__etcpack__getBundle(bundleName));
-/******/              return;
-/******/          }
-/******/  
-/******/          // 获取head标签
-/******/          var head = document.getElementsByTagName('head')[0];
-/******/  
-/******/          // 创建script
-/******/          var script = document.createElement('script');
-/******/  
-/******/          // 设置属性
-/******/          script.src = fileName;
-/******/  
-/******/          // 追加到页面
-/******/          head.appendChild(script);
-/******/  
-/******/          window.__etcpack__bundleFile__[fileName] = true;
-/******/  
-/******/          script.addEventListener('load', function () {
-/******/              resolve(window.__etcpack__getBundle(bundleName));
-/******/          }, false);
-/******/  
-/******/  
-/******/      });
-/******/  }
+/******/  // EtcPack Bootstrap/******/  
+/******/  // （ https://etcpack.github.io/api/ ）/******/  
+/******/  /******/  
+/******/  // 记录bundle的函数源码/******/  
+/******/  window.__etcpack__bundleSrc__ = {};/******/  
+/******/  /******/  
+/******/  // 记录bundle的运行结果/******/  
+/******/  window.__etcpack__bundleObj__ = {};/******/  
+/******/  /******/  
+/******/  // 获取bundle结果/******/  
+/******/  window.__etcpack__getBundle = function (bundleName) {/******/  
+/******/  /******/  
+/******/      // 一个bundle只有第一次导入的时候需要执行/******/  
+/******/      if (!(bundleName in window.__etcpack__bundleObj__)) {/******/  
+/******/          window.__etcpack__bundleObj__[bundleName] = window.__etcpack__bundleSrc__[bundleName]();/******/  
+/******/      }/******/  
+/******/  /******/  
+/******/      // 返回需要的bundle的结果/******/  
+/******/      return window.__etcpack__bundleObj__[bundleName];/******/  
+/******/  }/******/  
+/******/  /******/  
+/******/  window.__etcpack__bundleFile__ = {};/******/  
+/******/  /******/  
+/******/  // 获取懒加载bundle结果/******/  
+/******/  window.__etcpack__getLazyBundle = function (fileName, bundleName) {/******/  
+/******/      return new Promise(function (resolve) {/******/  
+/******/  /******/  
+/******/          // 如果加载过了/******/  
+/******/          if (window.__etcpack__bundleFile__[fileName]) {/******/  
+/******/              resolve(window.__etcpack__getBundle(bundleName));/******/  
+/******/              return;/******/  
+/******/          }/******/  
+/******/  /******/  
+/******/          // 获取head标签/******/  
+/******/          var head = document.getElementsByTagName('head')[0];/******/  
+/******/  /******/  
+/******/          // 创建script/******/  
+/******/          var script = document.createElement('script');/******/  
+/******/  /******/  
+/******/          // 设置属性/******/  
+/******/          script.src = fileName;/******/  
+/******/  /******/  
+/******/          // 追加到页面/******/  
+/******/          head.appendChild(script);/******/  
+/******/  /******/  
+/******/          window.__etcpack__bundleFile__[fileName] = true;/******/  
+/******/  /******/  
+/******/          script.addEventListener('load', function () {/******/  
+/******/              resolve(window.__etcpack__getBundle(bundleName));/******/  
+/******/          }, false);/******/  
+/******/  /******/  
+/******/  /******/  
+/******/      });/******/  
+/******/  }/******/  
 /******/  
 /************************************************************************/
 /******/
@@ -2814,10 +2814,10 @@ var template =__etcpack__scope_args__.default;
 
 var pages = {
   "main": function main() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle1.js','22');
+    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle1.js','22');
   },
   "guide": function guide() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle2.js','23');
+    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle2.js','23');
   }
 };
 
@@ -2918,7 +2918,7 @@ window.__etcpack__bundleSrc__['20']=function(){
 window.__etcpack__bundleSrc__['21']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<div ui-lazy='currentPage'></div>\n<footer>\n    Copyright © 2016-2022\n    <a href=\"https://hai2007.gitee.io/sweethome/\" target=\"_blank\">hai2007 走一步，再走一步。</a>\n    All rights reserved.\n    <br />\n    本网站由“你好2007”设计、开发和维护\n</footer>"
+    __etcpack__scope_bundle__.default= "<div ui-lazy='currentPage'></div>\r\n<footer>\r\n    Copyright © 2016-2022\r\n    <a href=\"https://hai2007.gitee.io/sweethome/\" target=\"_blank\">hai2007 走一步，再走一步。</a>\r\n    All rights reserved.\r\n    <br />\r\n    本网站由“你好2007”设计、开发和维护\r\n</footer>"
   
     return __etcpack__scope_bundle__;
 }

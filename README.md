@@ -40,4 +40,4 @@ npm run build
 ---------------------------------------
 [MIT](https://github.com/hai2007/opensource/blob/master/LICENSE)
 
-Copyright (c) 2022 [hai2007](https://hai2007.gitee.io/opensource/) 走一步，再走一步。
+Copyright (c) 2022 [hai2007](https://hai2007.github.io/SweetHome/) 走一步，再走一步。
