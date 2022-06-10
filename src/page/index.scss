@@ -1,5 +1,22 @@
-div {
-    min-height: calc(100vh - 97px);
+.tips {
+    line-height: 50px;
+    text-align: center;
+    background-color: #c58a82;
+    color: white;
+
+    &>a {
+        padding: 0 5px;
+        text-decoration: underline;
+        color: black;
+
+        &:hover {
+            font-weight: 800;
+        }
+    }
+}
+
+.view {
+    min-height: calc(100vh - 147px);
 }
 
 footer {

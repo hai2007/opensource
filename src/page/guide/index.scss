@@ -1,117 +1,128 @@
 .view {
-    text-align: center;
-    min-width: 980px;
+    padding: 20px;
+    padding-bottom: 20px;
+    width: 1000px;
+    margin: auto;
 
-    &>h2 {
-        line-height: 2em;
-        border-bottom: 1px solid rgb(0, 0, 0);
-        width: 500px;
-        margin: auto;
-        padding-top: 20px;
+    &>header {
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 40px;
+        background-color: #f2f0ef;
+        font-size: 22px;
+        font-family: cursive;
+        outline: 1px dashed black;
+
+        &>a {
+            float: right;
+            font-size: 12px;
+            background-color: black;
+            color: white;
+            line-height: 1em;
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
-    &>.item {
-        padding: 20px;
-        position: relative;
-        width: 380px;
-        display: inline-block;
-        margin: 10px;
-        text-align: left;
+    &>h2 {
+        border-left: 2px solid rgb(38, 212, 11);
+        padding-left: 5px;
+        font-size: 15px;
+        font-weight: 200;
+    }
 
-        &>span {
-            position: absolute;
-            right: -12px;
-            top: 50px;
-            width: 70px;
-            font-size: 12px;
-            text-align: center;
-            color: rgb(0, 0, 0);
-            padding: 5px 0;
-            background-color: rgb(255, 255, 255);
-        }
+    &>div {
+        margin-bottom: 40px;
 
-        &>fieldset {
-            font-size: 12px;
+        &>a {
+
+            position: relative;
+            background-position: 10px center;
+            background-size: 50px auto;
+            background-repeat: no-repeat;
+            padding-left: 70px;
+            min-height: 70px;
+            display: inline-block;
+            width: 300px;
+            outline: 1px solid rgb(245, 244, 244);
+            margin-top: 10px;
+            margin-right: 10px;
+            cursor: pointer;
             color: black;
-            padding: 10px;
 
-            &>div {
-                line-height: 2em;
+            &:hover {
+                outline: 1px solid rgb(199, 196, 196);
 
-                &>a {
-                    display: block;
-                    color: black;
-
-                    &::before {
-                        content: "*  ";
-                        color: #000000;
-                    }
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-
-                    &>i {
-                        font-style: normal;
-                        outline: 1px solid gray;
-                        padding: 0 5px;
-                        margin: 0 5px;
-                    }
+                &>p {
+                    text-decoration: underline;
                 }
             }
 
-            &>legend {
-                padding: 7px;
-                border-radius: 5px;
-                text-indent: 0;
-                color: white;
-
+            &>h4 {
+                line-height: 40px;
+                font-size: 14px;
             }
 
-            &.quick-read {
-
-                border-color: rgb(244, 168, 3);
-
-                &>legend {
-                    background-color: rgb(246, 6, 34);
-                }
+            &>p {
+                font-size: 12px;
             }
 
-            &.chart {
-                border-color: rgb(10, 171, 134);
-
-                &>legend {
-                    background-color: rgb(13, 92, 195);
-                }
+            &>h4,
+            p {
+                pointer-events: none;
             }
 
-            &.basic {
-                border-color: rgb(8, 205, 64);
-
-                &>legend {
-                    background-color: rgb(237, 229, 3);
-                }
+            &.learning-manual {
+                background-image: url('./image/learning-manual.png');
             }
 
-            &.plug {
-                border-color: rgb(41, 211, 234);
-
-                &>legend {
-                    background-color: rgb(239, 19, 107);
-                }
+            &.format-json {
+                background-image: url('./image/format-json.png');
             }
 
-
-            &.tool {
-                border-color: rgb(203, 241, 32);
-
-                &>legend {
-                    background-color: rgb(189, 152, 5);
-                }
+            &.clunch {
+                background-image: url('./image/clunch.png');
             }
 
+            &.image2d {
+                background-image: url('./image/image2d.png');
+            }
+
+            &.image3d {
+                background-image: url('./image/image3d.png');
+            }
+
+            &.tool-js {
+                background-image: url('./image/tool.png');
+            }
+
+            &.algorithm-js {
+                background-image: url('./image/algorithm.png');
+            }
+
+            &.node-js {
+                background-image: url('./image/nodejs.png');
+            }
+
+            &.browser-js {
+                background-image: url('./image/browser.png');
+            }
+
+            &.colors-picker {
+                background-image: url('./image/colors-picker.png');
+            }
+
+            &.image-editor {
+                background-image: url('./image/picture.jpeg');
+            }
+
+            &.Regexper-Visualization {
+                background-image: url('./image/Regexper-Visualization.png');
+            }
         }
-
-
     }
 }

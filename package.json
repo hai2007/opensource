@@ -1,6 +1,6 @@
 {
   "name": "opensource",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "🇨🇳 个人开源项目简介和一些相关内容汇总",
   "scripts": {
     "build": "nodejs -e build && etcpack_pkg --config etcpack.prod.js",

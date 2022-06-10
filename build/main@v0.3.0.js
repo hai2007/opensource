@@ -2814,10 +2814,10 @@ var template =__etcpack__scope_args__.default;
 
 var pages = {
   "main": function main() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle1.js','22');
+    return window.__etcpack__getLazyBundle('./build/main@v0.3.0-bundle1.js','22');
   },
   "guide": function guide() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle2.js','23');
+    return window.__etcpack__getLazyBundle('./build/main@v0.3.0-bundle2.js','23');
   }
 };
 
@@ -2907,7 +2907,7 @@ window.__etcpack__bundleSrc__['19']=function(){
 window.__etcpack__bundleSrc__['20']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "\n div{\n\nmin-height: calc(100vh - 97px);\n\n}\n\n footer{\n\nheight: 97px;\n\ntext-align: center;\n\nbackground-color: #fafafa;\n\nborder-top: 1px solid #d3d0d0;\n\nline-height: 2em;\n\npadding: 20px 0;\n\nfont-size: 14px;\n\nmin-width: 980px;\n\n}\n\n footer a{\n\npadding: 0 5px;\n\ncolor: rgb(5, 100, 117);\n\ntext-decoration: underline;\n\n}\n\n footer a:hover{\n\ncolor: rgb(3, 61, 71);\n\nfont-weight: 800;\n\n}\n"
+    __etcpack__scope_bundle__.default= "\n .tips{\n\nline-height: 50px;\n\ntext-align: center;\n\nbackground-color: #c58a82;\n\ncolor: white;\n\n}\n\n .tips>a{\n\npadding: 0 5px;\n\ntext-decoration: underline;\n\ncolor: black;\n\n}\n\n .tips>a:hover{\n\nfont-weight: 800;\n\n}\n\n .view{\n\nmin-height: calc(100vh - 147px);\n\n}\n\n footer{\n\nheight: 97px;\n\ntext-align: center;\n\nbackground-color: #fafafa;\n\nborder-top: 1px solid #d3d0d0;\n\nline-height: 2em;\n\npadding: 20px 0;\n\nfont-size: 14px;\n\nmin-width: 980px;\n\n}\n\n footer a{\n\npadding: 0 5px;\n\ncolor: rgb(5, 100, 117);\n\ntext-decoration: underline;\n\n}\n\n footer a:hover{\n\ncolor: rgb(3, 61, 71);\n\nfont-weight: 800;\n\n}\n"
   
     return __etcpack__scope_bundle__;
 }
@@ -2918,7 +2918,7 @@ window.__etcpack__bundleSrc__['20']=function(){
 window.__etcpack__bundleSrc__['21']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<div ui-lazy='currentPage'></div>\r\n<footer>\r\n    Copyright © 2016-2022\r\n    <a href=\"https://hai2007.gitee.io/sweethome/\" target=\"_blank\">hai2007 走一步，再走一步。</a>\r\n    All rights reserved.\r\n    <br />\r\n    本网站由“你好2007”设计、开发和维护\r\n</footer>"
+    __etcpack__scope_bundle__.default= "<div class=\"tips\">\r\n    温馨提示：\r\n    <a href=\"https://github.com/hai2007/computer-helper\" target=\"_blank\">\r\n        计算机助手\r\n        <img src=\"./image/computer-helper.ico\" alt=\"计算机助手\">\r\n    </a>\r\n    目前处于研发设计阶段，欢迎你\r\n    <a href=\"https://github.com/hai2007/computer-helper/issues\" target=\"_blank\">提建议</a>\r\n    哦～\r\n</div>\r\n<div class=\"view\" ui-lazy='currentPage'></div>\r\n<footer>\r\n    Copyright © 2016-2022\r\n    <a href=\"https://hai2007.gitee.io/sweethome/\" target=\"_blank\">hai2007 走一步，再走一步。</a>\r\n    All rights reserved.\r\n    <br />\r\n    本网站由“你好2007”设计、开发和维护\r\n</footer>"
   
     return __etcpack__scope_bundle__;
 }

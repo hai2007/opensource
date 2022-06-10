@@ -33,16 +33,16 @@ var template =__etcpack__scope_args__.default;
 
 var pages = {
   "home": function home() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle3.js','31');
+    return window.__etcpack__getLazyBundle('./build/main@v0.3.0-bundle3.js','31');
   },
   "basic": function basic() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle4.js','32');
+    return window.__etcpack__getLazyBundle('./build/main@v0.3.0-bundle4.js','32');
   },
   "problem": function problem() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle5.js','33');
+    return window.__etcpack__getLazyBundle('./build/main@v0.3.0-bundle5.js','33');
   },
   "example": function example() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle6.js','34');
+    return window.__etcpack__getLazyBundle('./build/main@v0.3.0-bundle6.js','34');
   }
 };
 
@@ -114,7 +114,7 @@ __etcpack__scope_bundle__.default=_class;
 window.__etcpack__bundleSrc__['29']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "\n header{\n\ntext-align: center;\n\nuser-select: none;\n\nmin-width: 980px;\n\n}\n\n header h2{\n\nline-height: 2em;\n\nfont-family: cursive;\n\nfont-size: 40px;\n\n}\n\n header h2>a{\n\nfloat: right;\n\nfont-size: 12px;\n\nbackground: #b47266;\n\nline-height: 1em;\n\npadding: 10px;\n\ncolor: white;\n\n}\n\n header h2>a:hover{\n\ntext-decoration: underline;\n\n}\n\n header ul{\n\nbackground-color: #000000;\n\npadding: 10px;\n\n}\n\n header ul li{\n\ndisplay: inline-block;\n\npadding: 5px 10px;\n\nfont-weight: 200;\n\nfont-size: 14px;\n\ncolor: gray;\n\ncursor: pointer;\n\nmargin: 0 10px;\n\n}\n\n header ul li[active='true']{\n\nbackground-color: #adb7be;\n\ncolor: black;\n\n}\n\n header ul li[active='false']:hover{\n\noutline: 1px dashed white;\n\ncolor: white;\n\n}\n\n div{\n\nmargin: 20px 0;\n\nmin-width: 980px;\n\n}\n"
+    __etcpack__scope_bundle__.default= "\n header{\n\ntext-align: center;\n\nuser-select: none;\n\nmin-width: 980px;\n\n}\n\n header h2{\n\nline-height: 2em;\n\nfont-family: cursive;\n\nfont-size: 40px;\n\n}\n\n header h2>a{\n\nfloat: right;\n\nfont-size: 12px;\n\nbackground: #b47266;\n\nline-height: 1em;\n\npadding: 10px;\n\ncolor: white;\n\nmargin-top: 10px;\n\nmargin-right: 10px;\n\n}\n\n header h2>a:hover{\n\ntext-decoration: underline;\n\n}\n\n header ul{\n\nbackground-color: #000000;\n\npadding: 10px;\n\n}\n\n header ul li{\n\ndisplay: inline-block;\n\npadding: 5px 10px;\n\nfont-weight: 200;\n\nfont-size: 14px;\n\ncolor: gray;\n\ncursor: pointer;\n\nmargin: 0 10px;\n\n}\n\n header ul li[active='true']{\n\nbackground-color: #adb7be;\n\ncolor: black;\n\n}\n\n header ul li[active='false']:hover{\n\noutline: 1px dashed white;\n\ncolor: white;\n\n}\n\n div{\n\nmargin: 20px 0;\n\nmin-width: 980px;\n\n}\n"
   
     return __etcpack__scope_bundle__;
 }
@@ -125,7 +125,7 @@ window.__etcpack__bundleSrc__['29']=function(){
 window.__etcpack__bundleSrc__['30']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<header>\r\n    <h2>\r\n        Open Source\r\n        <a href=\"#/guide\" target=\"_blank\">\r\n            常用链接访问\r\n        </a>\r\n    </h2>\r\n    <ul>\r\n        <li ui-bind:active=\"pageName=='home'\" ui-on:click=\"goto\" tag=\"home\">\r\n            首页\r\n        </li>\r\n        <li ui-bind:active=\"pageName=='basic'\" ui-on:click=\"goto\" tag=\"basic\">\r\n            基础建设\r\n        </li>\r\n        <li ui-bind:active=\"pageName=='problem'\" ui-on:click=\"goto\" tag=\"problem\">\r\n            待解决&经验\r\n        </li>\r\n        <li ui-bind:active=\"pageName=='example'\" ui-on:click=\"goto\" tag=\"example\">\r\n            工具&用例\r\n        </li>\r\n    </ul>\r\n</header>\r\n<div ui-lazy='currentPage'></div>\r\n"
+    __etcpack__scope_bundle__.default= "<header>\r\n    <h2>\r\n        编程首页\r\n        <a href=\"#/guide\" target=\"_blank\" title=\"个人开发时需要查询的文档或工具，提高开发效率\">\r\n            快速开发\r\n        </a>\r\n    </h2>\r\n    <ul>\r\n        <li ui-bind:active=\"pageName=='home'\" ui-on:click=\"goto\" tag=\"home\">\r\n            首页\r\n        </li>\r\n        <li ui-bind:active=\"pageName=='basic'\" ui-on:click=\"goto\" tag=\"basic\">\r\n            基础建设\r\n        </li>\r\n        <li ui-bind:active=\"pageName=='problem'\" ui-on:click=\"goto\" tag=\"problem\">\r\n            待解决&经验\r\n        </li>\r\n        <li ui-bind:active=\"pageName=='example'\" ui-on:click=\"goto\" tag=\"example\">\r\n            工具&用例\r\n        </li>\r\n    </ul>\r\n</header>\r\n<div ui-lazy='currentPage'></div>\r\n"
   
     return __etcpack__scope_bundle__;
 }
