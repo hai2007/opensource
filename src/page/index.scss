@@ -1,18 +1,10 @@
 .tips {
-    line-height: 50px;
     text-align: center;
-    background-color: #c58a82;
+    background-color: #8ab891;
     color: white;
-
-    &>a {
-        padding: 0 5px;
-        text-decoration: underline;
-        color: black;
-
-        &:hover {
-            font-weight: 800;
-        }
-    }
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
 }
 
 .view {
